@@ -6,6 +6,8 @@ Responsibilities:
 	- provide access to GameRoom creation
 	
 @todo #17 Implement Lobby as a Singleton
+
+@todo #17 Implement 
 "
 Class {
 	#name : #Lobby,
