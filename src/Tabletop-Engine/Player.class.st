@@ -18,5 +18,5 @@ Knowledge:
 Class {
 	#name : #Player,
 	#superclass : #Object,
-	#category : #'Tabletop-Engine'
+	#category : #'Tabletop-Engine-Core'
 }

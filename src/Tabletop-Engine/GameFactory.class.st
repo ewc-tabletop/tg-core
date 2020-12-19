@@ -4,7 +4,7 @@
 Class {
 	#name : #GameFactory,
 	#superclass : #Object,
-	#category : #'Tabletop-Engine'
+	#category : #'Tabletop-Engine-Core'
 }
 
 { #category : #factory }

@@ -8,5 +8,5 @@ I represent an action that can be taken by a player (eg. place a meeple, take a 
 Class {
 	#name : #Action,
 	#superclass : #Object,
-	#category : #'Tabletop-Engine'
+	#category : #'Tabletop-Engine-Core'
 }

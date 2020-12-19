@@ -1,21 +1,35 @@
 Class {
 	#name : #LobbyTest,
 	#superclass : #TestCase,
-	#category : #'Tabletop-Engine-Tests'
+	#instVars : [
+		'emptyLobby'
+	],
+	#category : #'Tabletop-Engine-Tests-Core'
 }
+
+{ #category : #running }
+LobbyTest >> setUp [ 
+	super setUp .
+	emptyLobby := Lobby withGames: (Dictionary newFromPairs: { #Abstract . GameFactory new }).
+]
 
 { #category : #tests }
 LobbyTest >> testEmptyListsUponCreation [
 
-	| lobby |
-	lobby := Lobby new.
-	self assert: lobby activeRooms isEmpty 
+	self assert: emptyLobby activeRooms isEmpty .
+	self assert: emptyLobby fullRooms isEmpty .
 ]
 
-{ #category : #asserting }
-LobbyTest >> testInstantiate [
+{ #category : #tests }
+LobbyTest >> testShouldContainGameFactory [
 
-	| lobby |
-	lobby := Lobby new.
-	lobby ifNotNil: [ self assert: true ] ifNil: [ self assert: false ]  
+	self assert: emptyLobby newRooms isNotEmpty .
+	
+	
+]
+
+{ #category : #tests }
+LobbyTest >> testShouldNotCreateAbstractGames [
+
+	self should: [ emptyLobby createGame: #Abstract ] raise: SubclassResponsibility .
 ]

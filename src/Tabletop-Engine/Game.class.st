@@ -4,5 +4,5 @@
 Class {
 	#name : #Game,
 	#superclass : #Object,
-	#category : #'Tabletop-Engine'
+	#category : #'Tabletop-Engine-Core'
 }
