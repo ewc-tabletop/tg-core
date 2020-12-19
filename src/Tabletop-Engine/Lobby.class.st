@@ -7,7 +7,7 @@ Responsibilities:
 	
 @todo #17 Implement Lobby as a Singleton
 
-@todo #17 Implement 
+@todo #17 Implement an ability to see creatable games
 "
 Class {
 	#name : #Lobby,
