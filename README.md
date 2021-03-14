@@ -4,3 +4,7 @@
 [![Hits-of-Code](https://hitsofcode.com/github/nergal-perm/tg-core?branch=master)](https://hitsofcode.com/github/nergal-perm/tg-core?branch=master/view?branch=master)
 
 Generic engine for tabletop games
+
+Social media image credits: 
+Photo by <a href="https://unsplash.com/@motivesandplaces?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aksel Fristrup</a> on <a href="/s/photos/board-game?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
