@@ -18,5 +18,13 @@ Knowledge:
 Class {
 	#name : #Player,
 	#superclass : #Object,
+	#instVars : [
+		'name'
+	],
 	#category : #'Tabletop-Engine-Core'
 }
+
+{ #category : #accessing }
+Player >> name: aName [
+	name := aName.
+]

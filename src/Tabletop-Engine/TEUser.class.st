@@ -1,8 +1,5 @@
-"
-@todo #3 Implement simple Game
-"
 Class {
-	#name : #Game,
+	#name : #TEUser,
 	#superclass : #Object,
 	#category : #'Tabletop-Engine-Core'
 }
