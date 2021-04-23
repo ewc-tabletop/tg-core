@@ -21,6 +21,11 @@ Table class >> withState: aCollection andReferee: aReferee [
 	^ self new withState: aCollection andReferee: aReferee. 
 ]
 
+{ #category : #testing }
+Table >> isAvailable [ 
+	^true
+]
+
 { #category : #'as yet unclassified' }
 Table >> runAction: anAction [
 	(anAction isValidFor: state) 

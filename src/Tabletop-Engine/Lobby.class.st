@@ -13,42 +13,32 @@ Class {
 	#name : #Lobby,
 	#superclass : #Object,
 	#instVars : [
-		'fullRooms',
-		'newRooms',
-		'waitingRooms'
+		'tables'
 	],
 	#category : #'Tabletop-Engine-Core'
 }
 
-{ #category : #'instance creation' }
-Lobby class >> withGames: aCollection [ 
-	^ self new gamesToCreate: aCollection.
-]
-
-{ #category : #accessing }
-Lobby >> activeRooms [
-	waitingRooms ifNil: [ waitingRooms := OrderedCollection new ].
-	^ waitingRooms
+{ #category : #'as yet unclassified' }
+Lobby >> addTables: anArray [
+	tables addAll: (anArray collect: [ :table | 
+		table addDependent: self;
+		yourself 
+	]).
+	self changed: #tables with: self.
 ]
 
 { #category : #'as yet unclassified' }
-Lobby >> createGame: aString [ 
-	^ (newRooms at: aString) createGame .
+Lobby >> addUsers: anArray [ 
+	anArray do: [ :user | self addDependent: user ].
+	self changed: #users with: self.
 ]
 
-{ #category : #accessing }
-Lobby >> fullRooms [
-	fullRooms ifNil: [ fullRooms := OrderedCollection new].
-	^ fullRooms
+{ #category : #'as yet unclassified' }
+Lobby >> availableTables [
+	^ tables select: [ :table | table isAvailable ].
 ]
 
-{ #category : #private }
-Lobby >> gamesToCreate: aCollection [ 
-	newRooms := aCollection.
-]
-
-{ #category : #accessing }
-Lobby >> newRooms [
-	newRooms ifNil: [ newRooms := OrderedCollection new].
-	^ newRooms
+{ #category : #'as yet unclassified' }
+Lobby >> tables: aCollection [ 
+	tables := aCollection
 ]
