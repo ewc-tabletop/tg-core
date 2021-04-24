@@ -2,12 +2,12 @@
 I represent the Game Lobby - an entry point to the whole Games application.
 
 Responsibilities:
-	- provide access to all existing GameRooms
+	- provide access to all existing Tables
 	- provide access to GameRoom creation
 	
 @todo #17 Implement Lobby as a Singleton
 
-@todo #17 Implement an ability to see creatable games
+@todo #17 Implement an ability for User to get available Tables
 "
 Class {
 	#name : #Lobby,
@@ -18,27 +18,29 @@ Class {
 	#category : #'Tabletop-Engine-Core'
 }
 
+{ #category : #'instance creation' }
+Lobby class >> new [ 
+	^ self basicNew initialize
+]
+
 { #category : #'as yet unclassified' }
 Lobby >> addTables: anArray [
-	tables addAll: (anArray collect: [ :table | 
-		table addDependent: self;
-		yourself 
-	]).
+	(tables addAll: anArray) do: [:table | table addDependent: self].
 	self changed: #tables with: self.
 ]
 
 { #category : #'as yet unclassified' }
-Lobby >> addUsers: anArray [ 
+Lobby >> availableTables [
+	^ tables select: [ :table | table isAvailable ] .
+]
+
+{ #category : #initialization }
+Lobby >> initialize [ 
+	tables := OrderedCollection new 
+]
+
+{ #category : #'as yet unclassified' }
+Lobby >> subscribeUsers: anArray [ 
 	anArray do: [ :user | self addDependent: user ].
 	self changed: #users with: self.
-]
-
-{ #category : #'as yet unclassified' }
-Lobby >> availableTables [
-	^ tables select: [ :table | table isAvailable ].
-]
-
-{ #category : #'as yet unclassified' }
-Lobby >> tables: aCollection [ 
-	tables := aCollection
 ]

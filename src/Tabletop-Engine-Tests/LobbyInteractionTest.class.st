@@ -1,7 +1,7 @@
 Class {
 	#name : #LobbyInteractionTest,
 	#superclass : #TestCase,
-	#category : #'Tabletop-Engine-Tests'
+	#category : #'Tabletop-Engine-Tests-Core'
 }
 
 { #category : #tests }
@@ -24,12 +24,14 @@ LobbyInteractionTest >> testUsersJoiningTable [
 
 | lobby eugene nikita table |
 
-lobby := Lobby new tables: (OrderedCollection newFrom: #()).
+lobby := Lobby new.
 
 eugene := TEUser new name: 'Eugene'.
 nikita := TEUser new name: 'Nikita'.
 
-lobby addUsers: { eugene . nikita }.
+" Такое ощущение, что это игроки должны подписаться на обновления лобби, 
+  а не лобби должно подписать игроков на свои обновления"
+lobby subscribeUsers: { eugene . nikita }.
 
 table := Table withState: TEMastermindState new.
 lobby addTables: { table }.
