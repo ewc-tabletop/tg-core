@@ -25,7 +25,7 @@ Lobby class >> new [
 
 { #category : #'as yet unclassified' }
 Lobby >> addTables: anArray [
-	(tables addAll: anArray) do: [:table | table addDependent: self].
+	(tables addAll: anArray; yourself) do: [:table | table addDependent: self].
 	self changed: #tables with: self.
 ]
 

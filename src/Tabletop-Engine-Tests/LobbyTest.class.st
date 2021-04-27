@@ -8,7 +8,7 @@ Class {
 }
 
 { #category : #tests }
-LobbyTest >> defaultLobby [
+LobbyTest >> lobbyWithATable [
 	^Lobby new 
 		addTables: Table new asOrderedCollection;
 		yourself
@@ -24,14 +24,14 @@ LobbyTest >> testHasNoAvailableTablesUponCreation [
 LobbyTest >> testLobbyRegistersAsTableDependent [
 
 	| lobby tableDependents |
-	lobby := self defaultLobby .
-	tableDependents := (lobby availableTables detect: [ :table | table isAvailable ]) dependents.
+	lobby := self lobbyWithATable .
+	tableDependents := lobby availableTables first dependents.
 	self assert: (tableDependents includes: lobby).
 ]
 
 { #category : #tests }
 LobbyTest >> testTablesCanBeAdded [
 	| lobby |
-	lobby := self defaultLobby .
+	lobby := self lobbyWithATable .
 	self assert: lobby availableTables notEmpty
 ]
