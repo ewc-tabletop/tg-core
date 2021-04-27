@@ -1,5 +1,7 @@
 "
 @todo #3 Implement simple Game
+
+@todo #15 Перенести определение доступности Стола в объект Table
 "
 Class {
 	#name : #Table,
@@ -21,9 +23,15 @@ Table class >> withState: aCollection andReferee: aReferee [
 	^ self new withState: aCollection andReferee: aReferee. 
 ]
 
+{ #category : #'as yet unclassified' }
+Table >> addUser: aTEUser [ 
+	state playersCanJoin 
+		ifTrue: [ state addPlayer: aTEUser ]
+]
+
 { #category : #testing }
 Table >> isAvailable [ 
-	^true
+	^ state playersCanJoin 
 ]
 
 { #category : #'as yet unclassified' }

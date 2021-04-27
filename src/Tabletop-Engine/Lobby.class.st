@@ -6,8 +6,6 @@ Responsibilities:
 	- provide access to GameRoom creation
 	
 @todo #17 Implement Lobby as a Singleton
-
-@todo #17 Implement an ability for User to get available Tables
 "
 Class {
 	#name : #Lobby,
@@ -43,4 +41,9 @@ Lobby >> initialize [
 Lobby >> subscribeUsers: anArray [ 
 	anArray do: [ :user | self addDependent: user ].
 	self changed: #users with: self.
+]
+
+{ #category : #updating }
+Lobby >> update: aSymbol [
+	self changed: aSymbol with: self
 ]

@@ -36,7 +36,10 @@ lobby subscribeUsers: { eugene . nikita }.
 table := Table withState: TEMastermindState new.
 lobby addTables: { table }.
 
-nikita.
+self assert: nikita tables isNotEmpty.
+self assert: eugene tables isNotEmpty.
 
-self assert: nikita name equals: 'Nikita'.
+eugene joinTable: (eugene tables first).
+
+self assert: nikita tables isEmpty.
 ]

@@ -10,8 +10,13 @@ Class {
 { #category : #tests }
 LobbyTest >> lobbyWithATable [
 	^Lobby new 
-		addTables: Table new asOrderedCollection;
+		addTables: (self tableForPlayers: 1) asOrderedCollection; 
 		yourself
+]
+
+{ #category : #'as yet unclassified' }
+LobbyTest >> tableForPlayers: aNumber [
+	^ Table withState: (TestState withMaxPlayers: 1)
 ]
 
 { #category : #tests }

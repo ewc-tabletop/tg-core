@@ -9,6 +9,12 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
+TEUser >> joinTable: aTable [
+	aTable addUser: self.
+	aTable changed: #users.
+]
+
+{ #category : #'as yet unclassified' }
 TEUser >> name [
 	^ name
 ]
@@ -16,6 +22,11 @@ TEUser >> name [
 { #category : #'as yet unclassified' }
 TEUser >> name: aName [
 	name := aName.
+]
+
+{ #category : #'as yet unclassified' }
+TEUser >> tables [
+	^ tables
 ]
 
 { #category : #'as yet unclassified' }
