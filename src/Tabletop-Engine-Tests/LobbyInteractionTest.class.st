@@ -20,6 +20,7 @@ LobbyInteractionTest >> testUsersJoiningTable [
 - Один юзер сядет за этот стол
 - Лобби обновится
 - Второй юзер получит пустой список доступных столов
+(тест коммита)
 "
 
 | lobby eugene nikita table |
