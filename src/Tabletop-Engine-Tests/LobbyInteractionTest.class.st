@@ -20,7 +20,6 @@ LobbyInteractionTest >> testUsersJoiningTable [
 - Один юзер сядет за этот стол
 - Лобби обновится
 - Второй юзер получит пустой список доступных столов
-(тест ssh v3)
 "
 
 | lobby eugene nikita table |
