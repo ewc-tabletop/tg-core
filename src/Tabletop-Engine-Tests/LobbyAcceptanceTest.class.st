@@ -12,3 +12,15 @@ Class {
 	#superclass : #TestCase,
 	#category : #'Tabletop-Engine-Tests-Acceptance'
 }
+
+{ #category : #tests }
+LobbyAcceptanceTest >> testSingleUserAndAnEmptyLobby [ 
+	| user lobby |
+	
+	user := TEUser new. 
+	lobby := Lobby new.
+	
+	lobby subscribeUsers: { user }.
+	
+	self assert: (user tables size) equals: 0.
+]
