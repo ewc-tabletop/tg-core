@@ -39,8 +39,11 @@ Lobby >> initialize [
 
 { #category : #'as yet unclassified' }
 Lobby >> subscribeUsers: anArray [ 
-	anArray do: [ :user | self addDependent: user ].
-	self changed: #users with: self.
+	anArray do: 
+		[ :user | 
+			self addDependent: user .
+			user update: #tables with: self ]
+	
 ]
 
 { #category : #updating }
