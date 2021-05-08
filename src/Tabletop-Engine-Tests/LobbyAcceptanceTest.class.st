@@ -13,6 +13,23 @@ Class {
 	#category : #'Tabletop-Engine-Tests-Acceptance'
 }
 
+{ #category : #'tests - test data' }
+LobbyAcceptanceTest >> lobbyWithoutFreeTables [
+	^ Lobby new addTables: { UnavailableTable new }
+]
+
+{ #category : #tests }
+LobbyAcceptanceTest >> testSingleUserAndALobbyWithoutFreeTables [
+	| user lobby |
+	
+	user := TEUser new. 
+	lobby := self lobbyWithoutFreeTables.
+	
+	lobby subscribeUsers: { user }.
+	
+	self assert: (user tables size) equals: 0.
+]
+
 { #category : #tests }
 LobbyAcceptanceTest >> testSingleUserAndAnEmptyLobby [ 
 	| user lobby |
