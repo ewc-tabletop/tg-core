@@ -1,6 +1,3 @@
-"
-@todo #15 Implement two Users and Lobby with one available Table
-"
 Class {
 	#name : #LobbyAcceptanceTest,
 	#superclass : #TestCase,
@@ -51,4 +48,20 @@ LobbyAcceptanceTest >> testSingleUserAndAnEmptyLobby [
 	lobby subscribeUsers: { user }.
 	
 	self assert: (user tables size) equals: 0.
+]
+
+{ #category : #tests }
+LobbyAcceptanceTest >> testTwoUsersAndALobbyWithFreeTable [
+	| user1 user2 lobby user2UpdatesCount |
+	
+	user1 := TEUser new. 
+	user2 := ObservableUser new.
+	lobby := self lobbyWithFreeTable.
+	lobby subscribeUsers: { user2 }.
+	user2UpdatesCount := user2 updatesCount .
+		
+	lobby subscribeUsers: { user1 }.
+	
+	self assert: (user1 tables size) equals: 1.
+	self assert: (user2 updatesCount) equals: user2UpdatesCount .
 ]
