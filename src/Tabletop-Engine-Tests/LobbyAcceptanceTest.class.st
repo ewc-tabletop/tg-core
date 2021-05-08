@@ -1,10 +1,4 @@
 "
-@todo #15 Implement single User and an empty Lobby case
-
-@todo #15 Implement single User and Lobby without free Tables
-
-@todo #15 Implement single User and Lobby with one available Table
-
 @todo #15 Implement two Users and Lobby with one available Table
 "
 Class {
@@ -14,8 +8,25 @@ Class {
 }
 
 { #category : #'tests - test data' }
+LobbyAcceptanceTest >> lobbyWithFreeTable [
+	^ Lobby new addTables: { Table withState: (TestState withMaxPlayers: 1) }
+]
+
+{ #category : #'tests - test data' }
 LobbyAcceptanceTest >> lobbyWithoutFreeTables [
 	^ Lobby new addTables: { UnavailableTable new }
+]
+
+{ #category : #tests }
+LobbyAcceptanceTest >> testSingleUserAndALobbyWithFreeTable [
+	| user lobby |
+	
+	user := TEUser new. 
+	lobby := self lobbyWithFreeTable.
+	
+	lobby subscribeUsers: { user }.
+	
+	self assert: (user tables size) equals: 1.
 ]
 
 { #category : #tests }
