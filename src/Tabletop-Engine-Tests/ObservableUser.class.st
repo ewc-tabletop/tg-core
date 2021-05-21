@@ -14,11 +14,13 @@ ObservableUser class >> new [
 
 { #category : #initialization }
 ObservableUser >> initialize [ 
-	updatesCount := 0
+	updatesCount := 0.
+	tables := [ ].
 ]
 
 { #category : #updating }
 ObservableUser >> update: anAspect with: aMeta [
+	super update: anAspect with: aMeta.
 	anAspect = #users ifTrue: [self updatesCount: updatesCount + 1]
 ]
 

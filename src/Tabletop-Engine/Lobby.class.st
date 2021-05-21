@@ -42,7 +42,7 @@ Lobby >> subscribeUsers: anArray [
 	anArray do: 
 		[ :user | 
 			self addDependent: user .
-			user update: #tables with: self ]
+			user update: #users with: self ]
 	
 ]
 

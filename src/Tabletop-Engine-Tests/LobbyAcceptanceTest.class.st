@@ -52,16 +52,17 @@ LobbyAcceptanceTest >> testSingleUserAndAnEmptyLobby [
 
 { #category : #tests }
 LobbyAcceptanceTest >> testTwoUsersAndALobbyWithFreeTable [
-	| user1 user2 lobby user2UpdatesCount |
+	| user1 user2 lobby |
 	
-	user1 := TEUser new. 
+	user1 := ObservableUser new. 
 	user2 := ObservableUser new.
 	lobby := self lobbyWithFreeTable.
-	lobby subscribeUsers: { user2 }.
-	user2UpdatesCount := user2 updatesCount .
-		
 	lobby subscribeUsers: { user1 }.
+		
+	lobby subscribeUsers: { user2 }.
 	
 	self assert: (user1 tables size) equals: 1.
-	self assert: (user2 updatesCount) equals: user2UpdatesCount .
+	self assert: (user2 tables size) equals: 1.
+	self assert: (user1 updatesCount) equals: 1.
+	self assert: (user2 updatesCount) equals: 1.
 ]
