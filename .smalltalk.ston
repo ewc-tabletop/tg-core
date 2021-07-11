@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading: [
+    SCIMetacelloLoadSpec {
+      #baseline: 'TabletopEngine',
+      #directory: 'src',
+      #platforms: [ #pharo ]
+    }
+  ]
+}
