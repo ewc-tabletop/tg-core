@@ -48,3 +48,8 @@ Class {
 	#superclass : #Object,
 	#category : #'Tabletop-Engine-Core'
 }
+
+{ #category : #actions }
+Action >> perform [ 
+	Transcript show: 'Action performed'
+]
