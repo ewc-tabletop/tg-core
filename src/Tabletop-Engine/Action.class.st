@@ -1,6 +1,4 @@
 "
-@todo #3 Implement basic action
-
 Object Cube:
 
 1. Классическая CRC-карточка. Содержит название класса, экземпляром которого 

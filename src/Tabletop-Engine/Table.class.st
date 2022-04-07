@@ -1,8 +1,3 @@
-"
-@todo #3 Implement simple Game
-
-@todo #15 Перенести определение доступности Стола в объект Table
-"
 Class {
 	#name : #Table,
 	#superclass : #Object,

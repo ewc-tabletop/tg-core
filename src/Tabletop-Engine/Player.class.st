@@ -1,6 +1,4 @@
 "
-@todo #3 Implement Player
-
 I represent an active (i.e. deciding and taking actions) participant of the game.
 
 Responsibilities:

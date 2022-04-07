@@ -4,8 +4,6 @@ I represent the Game Lobby - an entry point to the whole Games application.
 Responsibilities:
 	- provide access to all existing Tables
 	- provide access to GameRoom creation
-	
-@todo #17 Implement Lobby as a Singleton
 "
 Class {
 	#name : #Lobby,
