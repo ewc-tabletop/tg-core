@@ -11,6 +11,9 @@ Class {
 	#instVars : [
 		'tables'
 	],
+	#classInstVars : [
+		'uniqueInstance'
+	],
 	#category : #'Tabletop-Engine-Core'
 }
 
