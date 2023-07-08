@@ -32,9 +32,9 @@ BaselineOfTabletopEngine >> baseline: spec [
 { #category : #baselines }
 BaselineOfTabletopEngine >> postLoadBaseline: spec [
 	(PostLoaded isNotNil and: [ PostLoaded ]) ifTrue: [ ^ self ].
-	PostLoaded := true.
 
-	self class loadLepiter
+	(Smalltalk includesKey: #GtImage) ifTrue: [ self class loadLepiter ].
+	PostLoaded := true
 ]
 
 { #category : #baselines }
