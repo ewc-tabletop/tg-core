@@ -25,6 +25,7 @@ BaselineOfTabletopEngine >> baseline: spec [
 		do: [ spec postLoadDoIt: #postLoadBaseline:.
 			spec
 				package: 'Tabletop-Engine';
+				package: 'Tabletop-Engine-Slides';
 				package: 'Tabletop-Engine-Tests'
 					with: [ spec requires: #('Tabletop-Engine') ] ]
 ]
