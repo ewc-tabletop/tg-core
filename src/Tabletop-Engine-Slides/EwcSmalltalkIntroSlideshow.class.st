@@ -59,21 +59,19 @@ EwcSmalltalkIntroSlideshow >> slidePriorities [
 		содержание:
 		чтоТакоеSmalltalk:
 		составныеЧасти:
+		синтаксисЯзыка:
 	)
 ]
 
 { #category : #slides }
 EwcSmalltalkIntroSlideshow >> синтаксисЯзыка: aSlide [
 	<gtSlide>
-	<text: 'Конец 1960-х, Алан Кей и его концепт портативного компьютера для обучения. Операционная система была разработана в Xerox PARC и включала в себя полноценный GUI (впервые в истории). Для разработки этой операционной системы был придуман язык программирования Smalltalk, который воплотил идеи Кея об объектно-ориентированном программировании.'>
+	<text: 'Метод объявляется с помощью указания селектора сообщения и аргументов. Временные переменные (с областью видимости только внутри метода) должны быть объявлены в начале тела метода. Команды отделяются друг от друга точками. Для возврата значения из метода служит символ ^ (каретка).'>
 	^ aSlide textAndElement
-		elementWeight: 0.40;
 		priority: (self priorityFor: #синтаксисЯзыка:);
-		newTextWithFormat: (self
-				asText: 'Smalltalk - это первый чистый объектно-ориентированный язык и первая интерактивная графическая среда разработки / выполнения.');
-		element: [ GtFilePictureLiveSlide new
-				fileReference: (GtResourcesUtility
-						resourceAtPath: self picturesDirectoryPath / 'smalltalk-80.png') ]
+		newTextWithFormat: (self asHeader: 'Синтаксис языка');
+		element: [ GtPharoSyntaxExplainer new forMethod: GtPharoMethodExample >> #exampleWithNumber: ];
+		elementWeight: 0.5
 ]
 
 { #category : #slides }
