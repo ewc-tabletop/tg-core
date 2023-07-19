@@ -29,89 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-15T12:46:52.597065+03:00"
+						"dateAndTimeString" : "2023-07-19T07:38:26.158045+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "A0wBwuO8DQCbJSwAClS7iA=="
 				},
-				"code" : "EwcSmalltalkIntroSlideshow new"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-07-15T09:43:34.070389+03:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-07-15T09:43:42.468469+03:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "tHYJn+K8DQCDsc/bAMHUjg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Пример с открыткой"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-15T09:43:28.406921+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-15T09:43:33.598319+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mgJ/duK8DQC9jNCqAMHUjg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Синтаксис"
+				"code" : "EwcSmalltalkIntroSlideshow allInstances"
 			},
 			{
 				"__type" : "textSnippet",
@@ -127,7 +52,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-15T09:43:35.836613+03:00"
+						"dateAndTimeString" : "2023-07-16T17:21:44.151293+03:00"
 					}
 				},
 				"editEmail" : {
@@ -138,7 +63,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-15T09:43:35.836613+03:00"
+						"dateAndTimeString" : "2023-07-16T17:22:04.341293+03:00"
 					}
 				},
 				"uid" : {
@@ -148,7 +73,211 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Для игры в Крестики-Нолики самым важным объектом будет, вероятно, клетка игрового поля."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-16T17:47:11.038226+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-16T17:52:44.165252+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FJlsfv28DQCe90C5D8nnOA=="
+				},
+				"code" : "GtLudoSquare new.\rGtLudoGame new."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-16T17:56:05.374685+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-16T18:18:02.880038+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "W/hFnv28DQCf3ywnD8nnOA=="
+				},
+				"code" : "Object subclass: #EwcTictactoeGame\r\t instanceVariableNames: ''\r\t classVariableNames: ''\r\t package: 'Tabletop-Tictactoe-Ui'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-16T18:20:49.811018+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-18T08:25:19.378604+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "q6zA9v28DQCibtQ1D8nnOA=="
+				},
+				"code" : "EwcTictactoeGame new.\rEwcTictactoeGameElement.\rEwcTictactoeBoard.\rEwcTictactoeBoardElement.\rEwcTictactoeCell."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-17T09:03:07.907154+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-18T08:22:44.625746+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6e4bSgq9DQC6tB52CRMDTw=="
+				},
+				"code" : "EwcTictactoeCell for: 'a Game'.\rEwcTictactoeCellElement."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-18T08:22:45.066802+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-18T08:26:24.489344+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VLKJ1x29DQCp2E/1ApjNig=="
+				},
+				"code" : "game := EwcTictactoeGame new."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-19T07:58:13.957343+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-19T07:58:20.66528+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ObqxnTG9DQCMef1kB5zktg=="
+				},
+				"code" : "GtProtoLiveSlide"
 			}
 		]
 	},

@@ -9,6 +9,26 @@ EwcSmalltalkIntroSlideshow class >> show [
 	super show
 ]
 
+{ #category : #accessing }
+EwcSmalltalkIntroSlideshow >> liveDemoPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Изменение системы "на лету"')
+		addSnippet: (LeTextSnippet new
+				string: '#Пример небольшой системы';
+				addSnippet: (LeTextSnippet new
+						string: 'Это маленькая демонстрация частиц, двигающихся по прямой в замкнутом пространстве и отталкивающихся от его стенок.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'BlBouncingAtomsElement demo';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Эти частицы - не просто анимированные пиксели, а полноценные объекты, с которыми можно взаимодействовать.';
+						yourself);
+				yourself);
+		yourself
+]
+
 { #category : #'data source' }
 EwcSmalltalkIntroSlideshow >> outlineBullet [
 	^ (self
@@ -60,7 +80,16 @@ EwcSmalltalkIntroSlideshow >> slidePriorities [
 		чтоТакоеSmalltalk:
 		составныеЧасти:
 		синтаксисЯзыка:
+		живойПример:
 	)
+]
+
+{ #category : #slides }
+EwcSmalltalkIntroSlideshow >> живойПример: aSlide [
+	<gtSlide>
+	^ (aSlide lepiterPage)
+		priority: (self priorityFor: #живойПример:);
+		startPage: self liveDemoPage
 ]
 
 { #category : #slides }
