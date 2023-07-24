@@ -10,11 +10,6 @@ EwcSmalltalkIntroSlideshow class >> show [
 ]
 
 { #category : #accessing }
-EwcSmalltalkIntroSlideshow >> initializeDb [
-	self db addPage: (self lepiterPages pageNamed: self liveDemoPage).
-]
-
-{ #category : #accessing }
 EwcSmalltalkIntroSlideshow >> lepiterPages [
 	^ LeDatabasesRegistry default defaultLogicalDatabase
 		databaseNamed: 'nergal-perm/tg-core/lepiter'
@@ -85,7 +80,7 @@ EwcSmalltalkIntroSlideshow >> живойПример: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #живойПример:);
-		startPage: (self db pageNamed: self liveDemoPage)
+		startPage: (self lepiterPages pageNamed: self liveDemoPage)
 ]
 
 { #category : #slides }
