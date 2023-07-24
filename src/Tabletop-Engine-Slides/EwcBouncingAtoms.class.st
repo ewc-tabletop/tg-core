@@ -8,7 +8,7 @@ Class {
 EwcBouncingAtoms class >> demo [
 	<gtExample>
 	<noTest>
-	self new
+	^ self new
 		background: Color lightGreen;
 		initializeWith: 100
 			ofSize: 10 @ 10

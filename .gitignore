@@ -31,4 +31,5 @@ SqueakDebug.log
 github-*.zip
 
 # Backup files
+*.bak
 *.backup
