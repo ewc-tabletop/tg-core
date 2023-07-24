@@ -13,7 +13,45 @@
 							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
-								"items" : [ ]
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T08:30:41.821186+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T08:30:51.146444+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "yD6Pppa9DQC22itZAZcjog=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "[[Все есть объект]]"
+									}
+								]
 							},
 							"createEmail" : {
 								"__type" : "email",
@@ -34,7 +72,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2023-07-15T08:03:58.797286+03:00"
+									"dateAndTimeString" : "2023-07-15T08:04:07.489724+03:00"
 								}
 							},
 							"uid" : {
@@ -44,7 +82,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "00. [[Smalltalk - язык, среда разработки и "
+							"string" : "00. [[Smalltalk - язык, среда разработки и библиотека классов]]"
 						},
 						{
 							"__type" : "textSnippet",

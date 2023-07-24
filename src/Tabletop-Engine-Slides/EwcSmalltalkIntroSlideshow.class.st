@@ -10,23 +10,19 @@ EwcSmalltalkIntroSlideshow class >> show [
 ]
 
 { #category : #accessing }
+EwcSmalltalkIntroSlideshow >> initializeDb [
+	self db addPage: (self lepiterPages pageNamed: self liveDemoPage).
+]
+
+{ #category : #accessing }
+EwcSmalltalkIntroSlideshow >> lepiterPages [
+	^ LeDatabasesRegistry default defaultLogicalDatabase
+		databaseNamed: 'nergal-perm/tg-core/lepiter'
+]
+
+{ #category : #slides }
 EwcSmalltalkIntroSlideshow >> liveDemoPage [
-	<gtExample>
-	<noTest>
-	^ (LePage named: 'Изменение системы "на лету"')
-		addSnippet: (LeTextSnippet new
-				string: '#Пример небольшой системы';
-				addSnippet: (LeTextSnippet new
-						string: 'Это маленькая демонстрация частиц, двигающихся по прямой в замкнутом пространстве и отталкивающихся от его стенок.';
-						yourself);
-				addSnippet: (LePharoSnippet new
-						code: 'BlBouncingAtomsElement demo';
-						yourself);
-				addSnippet: (LeTextSnippet new
-						string: 'Эти частицы - не просто анимированные пиксели, а полноценные объекты, с которыми можно взаимодействовать.';
-						yourself);
-				yourself);
-		yourself
+	^ 'Изменение системы "на лету"'
 ]
 
 { #category : #'data source' }
@@ -87,9 +83,9 @@ EwcSmalltalkIntroSlideshow >> slidePriorities [
 { #category : #slides }
 EwcSmalltalkIntroSlideshow >> живойПример: aSlide [
 	<gtSlide>
-	^ (aSlide lepiterPage)
+	^ aSlide lepiterPage
 		priority: (self priorityFor: #живойПример:);
-		startPage: self liveDemoPage
+		startPage: (self db pageNamed: self liveDemoPage)
 ]
 
 { #category : #slides }
@@ -100,7 +96,7 @@ EwcSmalltalkIntroSlideshow >> синтаксисЯзыка: aSlide [
 		priority: (self priorityFor: #синтаксисЯзыка:);
 		newTextWithFormat: (self asHeader: 'Синтаксис языка');
 		element: [ GtPharoSyntaxExplainer new forMethod: GtPharoMethodExample >> #exampleWithNumber: ];
-		elementWeight: 0.5
+		elementWeight: 0.7
 ]
 
 { #category : #slides }

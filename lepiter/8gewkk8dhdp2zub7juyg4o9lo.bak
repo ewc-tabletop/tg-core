@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "elementSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-15T11:04:55.709123+03:00"
+						"dateAndTimeString" : "2023-07-24T07:08:42.535909+03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,14 +29,204 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-19T07:38:26.158045+03:00"
+						"dateAndTimeString" : "2023-07-24T07:09:45.369206+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "A0wBwuO8DQCbJSwAClS7iA=="
+					"uidString" : "8EPKgZW9DQChUDWAAZcjog=="
 				},
-				"code" : "EwcSmalltalkIntroSlideshow allInstances"
+				"code" : "GtPresenterSlideShow create: EwcSmalltalkIntroSlideshow new",
+				"elementHeight" : 508,
+				"codeHeight" : 62,
+				"codeVisible" : false
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T07:29:21.041774+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T07:29:35.344937+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "McUeypW9DQCvbNlWAZcjog=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "###История языка"
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T07:31:36.452099+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T07:31:53.687792+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "kpqu05W9DQCwhxOiAZcjog=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "Конец 1960-х, Алан Кей и его концепт портативного компьютера для обучения. Операционная система была разработана в Xerox PARC и включала в себя полноценный GUI (впервые в истории). Для разработки этой операционной системы был придуман язык программирования Smalltalk, который воплотил идеи Кея об объектно-ориентированном программировании."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T07:32:37.623481+03:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2023-07-24T07:33:55.427759+03:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Osrx1pW9DQCwkZEAAZcjog=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtTodo:label= Нужно расширить, больше информации по Xerox PARC / Dynabook|completed=}}  "
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-07-24T07:28:53.825638+03:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2023-07-24T07:28:53.825638+03:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "3BX9yZW9DQCvZj9pAZcjog=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "##Что это такое - Smalltalk?"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-24T07:28:46.084473+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-24T07:28:46.084473+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "i/yGyZW9DQCvQaSWAZcjog=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Структура выступления"
 			},
 			{
 				"__type" : "textSnippet",
@@ -52,7 +242,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T17:21:44.151293+03:00"
+						"dateAndTimeString" : "2023-07-24T07:14:11.609964+03:00"
 					}
 				},
 				"editEmail" : {
@@ -63,20 +253,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T17:22:04.341293+03:00"
+						"dateAndTimeString" : "2023-07-24T07:28:53.842071+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "d18kn+K8DQCDtgBlAMHUjg=="
+					"uidString" : "do8alJW9DQCnMlxJAZcjog=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Для игры в Крестики-Нолики самым важным объектом будет, вероятно, клетка игрового поля."
+				"string" : "• Составные части языка и среды\r• Синтаксис и особенности языка\r• Особенности среды Glamorous Toolkit"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -89,7 +279,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T17:47:11.038226+03:00"
+						"dateAndTimeString" : "2023-07-22T15:44:24.288461+03:00"
 					}
 				},
 				"editEmail" : {
@@ -100,17 +290,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T17:52:44.165252+03:00"
+						"dateAndTimeString" : "2023-07-22T15:44:41.91921+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "FJlsfv28DQCe90C5D8nnOA=="
+					"uidString" : "uyVhenS9DQCszse7BMH3WA=="
 				},
-				"code" : "GtLudoSquare new.\rGtLudoGame new."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Чистый объектно-ориентированный язык"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -123,7 +316,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T17:56:05.374685+03:00"
+						"dateAndTimeString" : "2023-07-22T15:44:42.043303+03:00"
 					}
 				},
 				"editEmail" : {
@@ -134,150 +327,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T18:18:02.880038+03:00"
+						"dateAndTimeString" : "2023-07-22T15:56:53.158869+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "W/hFnv28DQCf3ywnD8nnOA=="
+					"uidString" : "uCdwe3S9DQCt2BNWBMH3WA=="
 				},
-				"code" : "Object subclass: #EwcTictactoeGame\r\t instanceVariableNames: ''\r\t classVariableNames: ''\r\t package: 'Tabletop-Tictactoe-Ui'"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
+				"paragraphStyle" : {
+					"__type" : "textStyle"
 				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-16T18:20:49.811018+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-18T08:25:19.378604+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "q6zA9v28DQCibtQ1D8nnOA=="
-				},
-				"code" : "EwcTictactoeGame new.\rEwcTictactoeGameElement.\rEwcTictactoeBoard.\rEwcTictactoeBoardElement.\rEwcTictactoeCell."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-17T09:03:07.907154+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-18T08:22:44.625746+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "6e4bSgq9DQC6tB52CRMDTw=="
-				},
-				"code" : "EwcTictactoeCell for: 'a Game'.\rEwcTictactoeCellElement."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-18T08:22:45.066802+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-18T08:26:24.489344+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "VLKJ1x29DQCp2E/1ApjNig=="
-				},
-				"code" : "game := EwcTictactoeGame new."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-19T07:58:13.957343+03:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-19T07:58:20.66528+03:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ObqxnTG9DQCMef1kB5zktg=="
-				},
-				"code" : "GtProtoLiveSlide"
+				"string" : "Что означает **чистота** объектно-ориентированного языка? "
 			}
 		]
 	},
