@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "elementSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-24T07:08:42.535909+03:00"
+						"dateAndTimeString" : "2023-07-24T10:12:17.439608+03:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-24T07:09:45.369206+03:00"
+						"dateAndTimeString" : "2023-07-24T10:12:17.439608+03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8EPKgZW9DQChUDWAAZcjog=="
+					"uidString" : "D2BUEpi9DQCi7SYXCyA8Pw=="
 				},
-				"code" : "GtPresenterSlideShow create: EwcSmalltalkIntroSlideshow new",
-				"elementHeight" : 508,
-				"codeHeight" : 62,
-				"codeVisible" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-24T10:12:43.736411+03:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-24T10:12:50.908403+03:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YW7lE5i9DQCjCQa7CyA8Pw=="
+				},
+				"code" : "EwcSmalltalkIntroSlideshow show"
 			},
 			{
 				"__type" : "textSnippet",
@@ -216,7 +250,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-24T07:28:46.084473+03:00"
+						"dateAndTimeString" : "2023-07-24T10:12:16.860311+03:00"
 					}
 				},
 				"uid" : {

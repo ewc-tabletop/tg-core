@@ -10,6 +10,11 @@ EwcSmalltalkIntroSlideshow class >> show [
 ]
 
 { #category : #accessing }
+EwcSmalltalkIntroSlideshow >> initializeDb [
+	self db addPage: self liveDemoPage
+]
+
+{ #category : #accessing }
 EwcSmalltalkIntroSlideshow >> lepiterPages [
 	^ LeDatabasesRegistry default defaultLogicalDatabase
 		databaseNamed: 'nergal-perm/tg-core/lepiter'
@@ -17,7 +22,22 @@ EwcSmalltalkIntroSlideshow >> lepiterPages [
 
 { #category : #slides }
 EwcSmalltalkIntroSlideshow >> liveDemoPage [
-	^ 'Изменение системы "на лету"'
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Изменение системы "на лету"')
+		addSnippet: (LeTextSnippet new
+				string: '#Пример небольшой системы';
+				addSnippet: (LeTextSnippet new
+						string: 'Это маленькая демонстрация частиц, двигающихся по прямой в замкнутом пространстве и отталкивающихся от его стенок.';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Эти частицы - не просто анимированные пиксели, а полноценные объекты, с которыми можно взаимодействовать.';
+						yourself);
+				yourself);
+		addSnippet: (LePharoSnippet new
+				code: 'EwcBouncingAtoms demo';
+				yourself);
+		yourself
 ]
 
 { #category : #'data source' }
@@ -80,7 +100,7 @@ EwcSmalltalkIntroSlideshow >> живойПример: aSlide [
 	<gtSlide>
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #живойПример:);
-		startPage: (self lepiterPages pageNamed: self liveDemoPage)
+		startPage: (self db pageNamed: 'Изменение системы "на лету"')
 ]
 
 { #category : #slides }
