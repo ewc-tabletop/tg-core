@@ -10,6 +10,105 @@ EwcSmalltalkIntroSlideshow class >> show [
 ]
 
 { #category : #accessing }
+EwcSmalltalkIntroSlideshow >> everythingHappensBySendingMessagesPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Все взаимодействие - через сообщения')
+		addSnippet: (LeTextSnippet new
+				string: 'Smalltalk использует термин "метод" не так, как большинство из нас. Никто не  "вызывает методы", вместо этого мы *"посылаем объектам сообщения"*, и каждый объект сам определяет, *"понимает ли он сообщение"* и имеет ли "метод" для ответа на это сообщение.';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Сообщение - это запрос на оказание услуги.
+#"Метод" - это код, оказывающий услугу.';
+				addSnippet: (LeTextSnippet new
+						string: 'Выражение `3+4` - это *сообщение* "`+4`" с *селектором* "`+`" и аргументом `4`, отправленное *получателю* `3`:';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '3 + 4';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'У объекта-получателя `3` есть *метод* (фрагмент кода) для расчета требуемого значения.';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Все вычисления - это отправка сообщений';
+				addSnippet: (LeTextSnippet new
+						string: 'В языке нет встроенных операторов, есть только механизм отправки сообщений:';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Отправка сообщения `/` числу приведет к выполнению фабричного метода, создающего новый экземпляр класса {{gtClass:name=Fraction}}. ';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '3 / 4';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Как и в других OO языках, `=` проверяет объекты на равенство, а `==` проверяет на идентичность.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '(3 = 4) not';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Значение блока можно получить, отправив ему сообщение `value`.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '[ 3 +  4 ] value ';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Экземпляры создаются с помощью отправки сообщений классам';
+				addSnippet: (LePharoSnippet new
+						code: 'OrderedCollection new ';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'Fraction numerator: 3 denominator: 4';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'Set with: 3 with: 4';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Изменения в системе - это тоже отправка сообщений';
+				addSnippet: (LeTextSnippet new
+						string: '... хотя удобнее использовать специальные UI-инструменты :)';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Класс можно создать, отправив сообщение его суперклассу:';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'Object subclass: #MyClass';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Можно попросить класс создать и скомпилировать метод:';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'MyClass compile: ''foo ^ 42''';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'MyClass new foo ';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Можно удалить класс из системы, попросив об этом глобально доступный объект `Smalltalk`:';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'Smalltalk removeClassNamed: ''MyClass''';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Изменить можно все!';
+				addSnippet: (LeTextSnippet new
+						string: '*Внимание:* администрация не несет ответственности за возможный ущерб!';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'Smalltalk removeClassNamed: ''Object''';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'К счастью Smalltalk не даст выполнить эту конкретную операцию. Но существует огромное количество других способов "выстрелить себе в ногу"!';
+						yourself);
+				yourself);
+		yourself
+]
+
+{ #category : #accessing }
 EwcSmalltalkIntroSlideshow >> everythingIsAnObjectPage [
 	<gtExample>
 	<noTest>
@@ -101,7 +200,8 @@ EwcSmalltalkIntroSlideshow >> everythingIsAnObjectPage [
 { #category : #accessing }
 EwcSmalltalkIntroSlideshow >> initializeDb [
 	self db addPage: self liveDemoPage.
-	self db addPage: self everythingIsAnObjectPage
+	self db addPage: self everythingIsAnObjectPage.
+	self db addPage: self everythingHappensBySendingMessagesPage
 ]
 
 { #category : #slides }
@@ -175,6 +275,7 @@ EwcSmalltalkIntroSlideshow >> slidePriorities [
 		чтоТакоеSmalltalk:
 		составныеЧасти:
 		всеЕстьОбъект:
+		всеЧерезСообщения:
 		синтаксисЯзыка:
 		живойПример:
 	)
@@ -186,6 +287,14 @@ EwcSmalltalkIntroSlideshow >> всеЕстьОбъект: aSlide [
 	^ aSlide lepiterPage
 		priority: (self priorityFor: #всеЕстьОбъект:);
 		startPage: (self db pageNamed: 'Все есть объект')
+]
+
+{ #category : #slides }
+EwcSmalltalkIntroSlideshow >> всеЧерезСообщения: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		priority: (self priorityFor: #всеЧерезСообщения:);
+		startPage: (self db pageNamed: 'Все взаимодействие - через сообщения')
 ]
 
 { #category : #slides }
