@@ -10,14 +10,98 @@ EwcSmalltalkIntroSlideshow class >> show [
 ]
 
 { #category : #accessing }
-EwcSmalltalkIntroSlideshow >> initializeDb [
-	self db addPage: self liveDemoPage
+EwcSmalltalkIntroSlideshow >> everythingIsAnObjectPage [
+	<gtExample>
+	<noTest>
+	^ (LePage named: 'Все есть объект')
+		addSnippet: (LeTextSnippet new
+				string: 'Каждый объект это экземпляр какого-то класса.';
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Числа, строки, блоки и булевы значения - это объекты';
+				addSnippet: (LeTextSnippet new
+						string: 'Мы можем увидеть детали любого объекта и взаимодействовать с ним.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '1';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '''Привет!''';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'true';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '[ 3 + 4 ]';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Инспектор объектов предлагает несколько разных точек зрения на объект в разных вкладках.';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Классы - это тоже объекты';
+				addSnippet: (LeTextSnippet new
+						string: 'Поскольку классы - это объекты, мы можем точно так же инспектировать их, взаимодействовать с ними и применять к ним инструменты среды.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'SmallInteger';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Классам можно посылать сообщения.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'SmallInteger maxVal';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Что произойдет, если прибавить единицу к самому большому `SmallInteger`?';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Методы - это объекты';
+				addSnippet: (LeTextSnippet new
+						string: 'Можно попросить у класса скомпилированный код метода, который можно проинспектировать.';
+						yourself);
+				addSnippet: (LeTextSnippet new
+						string: 'Также можно посмотреть на исходный код метода, его байткод и AST.';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: '4 even';
+						yourself);
+				addSnippet: (LePharoSnippet new
+						code: 'SmallInteger>>#even';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Эта страница - объект';
+				addSnippet: (LePharoSnippet new
+						code: 'thisSnippet page ';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Инструменты среды - объекты';
+				addSnippet: (LePharoSnippet new
+						code: 'GtCoder forClass: SmallInteger';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Эта презентация - объект';
+				addSnippet: (LePharoSnippet new
+						code: 'GtPresenterSlideShow create: EwcSmalltalkIntroSlideshow new';
+						yourself);
+				yourself);
+		addSnippet: (LeTextSnippet new
+				string: '#Сама среда - объект';
+				addSnippet: (LePharoSnippet new
+						code: 'GtWorldElement new ';
+						yourself);
+				yourself);
+		yourself
 ]
 
 { #category : #accessing }
-EwcSmalltalkIntroSlideshow >> lepiterPages [
-	^ LeDatabasesRegistry default defaultLogicalDatabase
-		databaseNamed: 'nergal-perm/tg-core/lepiter'
+EwcSmalltalkIntroSlideshow >> initializeDb [
+	self db addPage: self liveDemoPage.
+	self db addPage: self everythingIsAnObjectPage
 ]
 
 { #category : #slides }
@@ -90,9 +174,18 @@ EwcSmalltalkIntroSlideshow >> slidePriorities [
 		содержание:
 		чтоТакоеSmalltalk:
 		составныеЧасти:
+		всеЕстьОбъект:
 		синтаксисЯзыка:
 		живойПример:
 	)
+]
+
+{ #category : #slides }
+EwcSmalltalkIntroSlideshow >> всеЕстьОбъект: aSlide [
+	<gtSlide>
+	^ aSlide lepiterPage
+		priority: (self priorityFor: #всеЕстьОбъект:);
+		startPage: (self db pageNamed: 'Все есть объект')
 ]
 
 { #category : #slides }

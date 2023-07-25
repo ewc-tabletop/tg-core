@@ -11,8 +11,8 @@ EwcBouncingAtoms class >> demo [
 	^ self new
 		background: Color lightGreen;
 		initializeWith: 100
-			ofSize: 10 @ 10
-			within: 800 @ 600
+			ofSize: 5 @ 5
+			within: 400 @ 300
 ]
 
 { #category : #'instance creation' }
