@@ -11,7 +11,7 @@
 ```smalltalk
 Metacello new
 	baseline: 'TabletopEngine';
-	repository: 'github://nergal-perm/tg-core:master/src';
+	repository: 'github://ewc-tabletop/tg-core:master/src';
 	load.
 ```
 

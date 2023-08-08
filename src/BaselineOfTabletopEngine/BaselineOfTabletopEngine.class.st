@@ -12,7 +12,7 @@ BaselineOfTabletopEngine class >> loadLepiter [
 	| currentProperties |
 	currentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.
 	currentProperties
-		addRegisteredDirectory: FileLocator imageDirectory / 'pharo-local' / 'iceberg' / 'nergal-perm'
+		addRegisteredDirectory: FileLocator imageDirectory / 'pharo-local' / 'iceberg' / 'ewc-tabletop'
 				/ 'tg-core' / 'lepiter'.
 	LeDatabasesRegistry default defaultLogicalDatabase reload
 ]
